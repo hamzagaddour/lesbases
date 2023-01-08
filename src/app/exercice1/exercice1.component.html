@@ -1,0 +1,13 @@
+<h1>{{ title }}</h1>
+<br />
+<br />
+<button (click)="sauvegarder()">Sauvegarder</button>
+<br />
+<br />
+
+<img [src]="lienImage" alt="image" />
+<br />
+<br />
+
+<input type="text" [value]="nom" (input)="nom = $any($event.target).value" />
+<p>{{ nom }}</p>
